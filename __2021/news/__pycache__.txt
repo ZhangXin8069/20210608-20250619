@@ -1,3 +1,0 @@
-|    |    +--new.cpython-310.pyc
-|    |    +--news.cpython-310.pyc
-|    |    +--news.cpython-39.pyc

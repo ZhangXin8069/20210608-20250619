@@ -1,7 +1,0 @@
-man
-vim
-git
-python
-openssh
-tree 
-sshpass

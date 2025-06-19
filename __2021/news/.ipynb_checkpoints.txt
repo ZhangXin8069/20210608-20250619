@@ -1,3 +1,0 @@
-|    |    +--news-checkpoint.py
-|    |    +--Untitled-checkpoint.ipynb
-|    |    +--untitled-checkpoint.py
