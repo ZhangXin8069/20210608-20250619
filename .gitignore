@@ -198,3 +198,5 @@ cython_debug/
 # *.png 
 # *.jpg
 # *jpeg
+.log.txt
+.gitignore.swp
