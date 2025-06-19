@@ -195,3 +195,6 @@ cython_debug/
 
 # Custom
 *.dat
+*.png 
+*.jpg
+*jpeg
