@@ -1,0 +1,279 @@
+%--- custom definitions ------------------------------------------------------
+%
+%...quarks
+\newcommand{\q}     {\ensuremath{q}\xspace}
+\newcommand{\qbar}  {\ensuremath{\overline q}\xspace}
+\newcommand{\qqbar} {\ensuremath{q\overline q}\xspace}
+\newcommand{\ubar}  {\ensuremath{\overline u}\xspace}
+\newcommand{\uubar} {\ensuremath{u\overline u}\xspace}
+\newcommand{\dbar}  {\ensuremath{\overline d}\xspace}
+\newcommand{\ddbar} {\ensuremath{d\overline d}\xspace}
+\newcommand{\sbar}  {\ensuremath{\overline s}\xspace}
+\newcommand{\ssbar} {\ensuremath{s\overline s}\xspace}
+\newcommand{\cbar}  {\ensuremath{\overline c}\xspace}
+\newcommand{\ccbar} {\ensuremath{c\overline c}\xspace}
+\newcommand{\bbar}  {\ensuremath{\overline b}\xspace}
+\newcommand{\bbbar} {\ensuremath{b\overline b}\xspace}
+\newcommand{\tbar}  {\ensuremath{\overline t}\xspace}
+\newcommand{\ttbar} {\ensuremath{t\overline t}\xspace}
+%
+%...onia
+\newcommand{\jpsi}     {\ensuremath{{J\mskip -3mu/\mskip -2mu\psi\mskip 2mu}}\xspace}
+\newcommand{\psitwos}  {\ensuremath{\psi{(2S)}}\xspace}
+\newcommand{\psiprpr}  {\ensuremath{\psi(3770)}\xspace}
+\newcommand{\etac}     {\ensuremath{\eta_c}\xspace}
+\newcommand{\chiczero} {\ensuremath{\chi_{c0}}\xspace}
+\newcommand{\chicone}  {\ensuremath{\chi_{c1}}\xspace}
+\newcommand{\chictwo}  {\ensuremath{\chi_{c2}}\xspace}
+\mathchardef\Upsilon="7107
+\def\Y#1S{\ensuremath{\Upsilon{(#1S)}}\xspace}% no space before {...}!
+\newcommand{\OneS}  {\Y1S}
+\newcommand{\TwoS}  {\Y2S}
+\newcommand{\ThreeS}{\Y3S}
+\newcommand{\FourS} {\Y4S}
+\newcommand{\FiveS} {\Y5S}
+%
+% ----------------------------------------------------------------------
+%...new for alpha_s paper
+% ----------------------------------------------------------------------
+% QCD parameters
+
+\newcommand{\NNLO}{NNLO\xspace}
+\newcommand{\NNNLO}{\ensuremath{{\rm N}^3{\rm LO}}\xspace}
+\newcommand{\mtau}{\ensuremath{m_\tau}\xspace}
+\newcommand{\mZ}{\ensuremath{m_Z}\xspace}
+\newcommand{\as}{\ensuremath{\alpha_{\scriptscriptstyle S}}\xspace}
+\newcommand{\asTau}{\ensuremath{\as(\mtau^2)}\xspace}
+\newcommand{\asmu}{\ensuremath{\as(\mu)}\xspace}
+\newcommand{\ass}{\ensuremath{\as(s)}\xspace}
+\newcommand{\asZ}{\ensuremath{\as(\mZ^2)}\xspace}
+\newcommand{\asTauV}{\ensuremath{\as^{(V)}(\mtau^2)}\xspace}
+\newcommand{\asTauA}{\ensuremath{\as^{(A)}(\mtau^2)}\xspace}
+\newcommand{\asZZ}{\ensuremath{\as^{(Z)}(\mZ^2)}\xspace}
+\newcommand{\asZtau}{\ensuremath{\as^{(\Tau)}(\mZ^2)}\xspace}
+\newcommand{\MSb}{\ensuremath{\overline{\mathrm{MS}}}\xspace}
+\newcommand{\aZ}{\ensuremath{\alpha(m_Z^2)}\xspace}
+\newcommand{\dahadZ}{\ensuremath{\Delta\alpha_{\rm had}(m_Z^2)}\xspace}
+\newcommand{\dahadZf}{\ensuremath{\Delta\alpha_{\rm had}^{(5)}(m_Z^2)}\xspace}
+\newcommand{\LMSb}{%
+  \ensuremath{\Lambda_{\overline{\scriptscriptstyle\mathrm{MS}}}}\xspace
+}
+\newcommand\Ree{\ensuremath{R_{e^+e^-}}\xspace}
+\newcommand\Rtau{\ensuremath{R_\tau}\xspace}
+\newcommand\RtauV{\ensuremath{R_{\tau,V}}\xspace}
+\newcommand\RtauA{\ensuremath{R_{\tau,A}}\xspace}
+\newcommand\RtauS{\ensuremath{R_{\tau,S}}\xspace}
+\newcommand\RtauVA{\ensuremath{R_{\tau,V/A}}\xspace}
+\newcommand\RtauVpA{\ensuremath{R_{\tau,V+A}}\xspace}
+\newcommand\GG{\ensuremath{\langle a_s GG\rangle}\xspace}
+\newcommand\Osix{\ensuremath{\langle{\cal O}_6\rangle}\xspace}
+\newcommand\Oeight{\ensuremath{\langle{\cal O}_8\rangle}\xspace}
+\renewcommand\l{\ell}
+
+\newcommand\chiS{\ensuremath{\chi^2}\xspace}
+\newcommand\chiSdof{\ensuremath{\chi^2/{\rm ndof}}\xspace}
+\newcommand\sqrtS{\ensuremath{\sqrt{\rm s}}\xspace}
+
+% Electroweak parameters
+
+\newcommand{\tw}{\ensuremath{\theta_{\scriptscriptstyle W}}\xspace}
+\newcommand{\twb}{%
+  \ensuremath{\overline{\theta}_{\scriptscriptstyle W}}\xspace
+}
+\newcommand{\Afb}[1]{{\ensuremath{A_{\scriptscriptstyle FB}^{#1}}}\xspace}
+\newcommand{\gv}[1]{{\ensuremath{g_{\scriptscriptstyle V}^{#1}}}\xspace}
+\newcommand{\ga}[1]{{\ensuremath{g_{\scriptscriptstyle A}^{#1}}}\xspace}
+\newcommand{\gvb}[1]{{\ensuremath{\overline{g}_{\scriptscriptstyle V}^{#1}}}\xspace}
+\newcommand{\gab}[1]{{\ensuremath{\overline{g}_{\scriptscriptstyle A}^{#1}}}\xspace}
+
+% Particles
+
+\newcommand{\Kbar    }{\kern 0.2em\overline{\kern -0.2em K}{}\xspace}
+\newcommand{\Dbar    }{\kern 0.2em\overline{\kern -0.2em D}{}\xspace}
+\newcommand{\pbar    }{\kern 0.1em\overline{\kern -0.1em p}{}\xspace}
+\newcommand{\nbar    }{\kern 0.1em\overline{\kern -0.1em n}{}\xspace}
+\newcommand{\Kb      }{\ensuremath{\Kbar}\xspace}
+\newcommand{\Kz      }{\ensuremath{K^0}\xspace}
+\newcommand{\Kzb     }{\ensuremath{\Kbar^0}\xspace}
+\newcommand{\KzKzb   }{\ensuremath{\Kz \kern -0.16em \Kzb}\xspace}
+\newcommand{\Kp      }{\ensuremath{K^+}\xspace}
+\newcommand{\Km      }{\ensuremath{K^-}\xspace}
+\newcommand{\Kpm     }{\ensuremath{K^\pm}\xspace}
+\newcommand{\Kmp     }{\ensuremath{K^\mp}\xspace}
+\newcommand{\KpKm    }{\ensuremath{\Kp \kern -0.16em \Km}\xspace}
+\newcommand{\KS      }{\ensuremath{K^0_{\scriptscriptstyle S}}\xspace} 
+\newcommand{\KL      }{\ensuremath{K^0_{\scriptscriptstyle L}}\xspace} 
+\newcommand{\Kstarz  }{\ensuremath{K^{*0}}\xspace}
+\newcommand{\Kstarzb }{\ensuremath{\Kbar^{\star0}}\xspace}
+\newcommand{\Kstar   }{\ensuremath{K^\star}\xspace}
+\newcommand{\Kstarb  }{\ensuremath{\Kbar^\star}\xspace}
+\newcommand{\Kstarp  }{\ensuremath{K^{\star+}}\xspace}
+\newcommand{\Kstarm  }{\ensuremath{K^{\star-}}\xspace}
+\newcommand{\Kstarpm }{\ensuremath{K^{\star\pm}}\xspace}
+\newcommand{\Kstarmp }{\ensuremath{K^{\star\mp}}\xspace}
+
+%...bibliography
+\def\NP{{Nucl. Phys.}\xspace}
+\def\PL{{Phys. Lett.}\xspace}
+\def\PR{{Phys. Rev.}\xspace}
+\def\PRep{{Phys. Rep.}\xspace}
+\def\PRL{{Phys. Rev. Lett.}\xspace}
+\def\NIM{{Nucl. Inst. Meth.}\xspace}
+\def\ZP{{Z. Phys.}\xspace}
+\def\EPJ{{Eur. Phys. J.}\xspace}
+\def\TAU{{Talk given at the TAU'96 Conference, Colorado, 1996}\xspace}
+\def\TAUs{{Talks given at the TAU'96 Conference, Colorado, 1996}\xspace}
+\def\QCD{{Talk given at the QCD96 Conference, Montpellier, 1996}\xspace}
+\def\CPC{{Comp. Phys. Comm.}\xspace}
+
+% ----------------------------------------------------------------------
+%
+%...other stuff
+\newcommand{\DeltaPiA}{\ensuremath{\Delta\Pi^{(I)}}\xspace}
+\newcommand{\PiB}{\ensuremath{\Pi^{(II)}}\xspace}
+\newcommand{\DeltaPiB}{\ensuremath{\Delta\PiB}\xspace}
+\newcommand{\FOPTmaybepp}{\ensuremath{{\rm FOPT}^{(++)}}\xspace}
+\newcommand{\FOPTp}{\ensuremath{{\rm FOPT}^{+}}\xspace}
+\newcommand{\FOPTpp}{\ensuremath{{\rm FOPT}^{++}}\xspace}
+\newcommand{\CIPTmaybepp}{\ensuremath{{\rm CIPT}^{(++)}}\xspace}
+\newcommand{\CIPTp}{\ensuremath{{\rm CIPT}^{+}}\xspace}
+\newcommand{\CIPTpp}{\ensuremath{{\rm CIPT}^{++}}\xspace}
+%\newcommand{\second}{\ensuremath{2^{\rm nd}}\xspace}
+%\newcommand{\third}{\ensuremath{3^{\rm rd}}\xspace}
+%\newcommand{\fourth}{\ensuremath{4^{\rm th}}\xspace}
+%\newcommand{\fifth}{\ensuremath{5^{\rm th}}\xspace}
+%\newcommand{\sixth}{\ensuremath{6^{\rm th}}\xspace}
+%\newcommand{\nth}{\ensuremath{n^{\rm th}}\xspace}
+\newcommand{\second}{second\xspace}
+\newcommand{\third}{third\xspace}
+\newcommand{\fourth}{fourth\xspace}
+\newcommand{\fifth}{fifth\xspace}
+\newcommand{\sixth}{sixth\xspace}
+\newcommand{\nth}{$n$-th\xspace}
+\newcommand{\mc}{\multicolumn}
+\newcommand{\e}{\varepsilon}
+\newcommand{\hmm}{\hspace{-0.2cm}}
+\newcommand{\hmmm}{\hspace{-0.3cm}}
+\newcommand{\ointl}{\oint\limits}
+\newcommand{\intl}{\int\limits}
+\newcommand{\Tau}{\ensuremath{\tau}\xspace}
+\newcommand{\nut}{\ensuremath{\nu_\tau}\xspace}
+\newcommand{\nub}{\ensuremath{\overline{\nu}}\xspace}
+\newcommand{\nueb}{\ensuremath{\nub_e}\xspace}
+\newcommand{\BR}{\ensuremath{{\cal B}}\xspace}
+\newcommand{\tautopipiz}{\ensuremath{\tau^-\to\pim\piz\nu_{\tau}}\xspace}
+\newcommand{\tautoppz}{\tautopipiz}
+\newcommand{\Btau}{\ensuremath{\BR_{\pipiz}}\xspace}
+\newcommand{\BCVC}{\ensuremath{\BR^{\rm CVC}}\xspace}
+\newcommand{\BCVCbare}{\ensuremath{\BR^{{\rm CVC},(0)}}\xspace}
+\newcommand{\BCVCppz}{\ensuremath{\BR^{\rm CVC}_{\pipiz}}\xspace}
+\newcommand{\BCVCbareppz}{\ensuremath{\BR^{{\rm CVC},(0)}_{\pipiz}}\xspace}
+\newcommand{\fpi}{\ensuremath{F_{\pi}}\xspace}
+\newcommand{\jpc}{\ensuremath{J^{PC}}\xspace}
+\newcommand{\pip}{\ensuremath{\pi^+}\xspace}
+\newcommand{\pim}{\ensuremath{\pi^-}\xspace}
+\newcommand{\piz}{\ensuremath{\pi^0}\xspace}
+\newcommand{\rhop}{\ensuremath{\rho^+}\xspace}
+\newcommand{\rhom}{\ensuremath{\rho^-}\xspace}
+\newcommand{\rhoz}{\ensuremath{\rho^0}\xspace}
+\newcommand{\psp}{\ensuremath{\psi(2S)}\xspace}
+\newcommand{\ee}{\ensuremath{e^+e^-}\xspace}
+\newcommand{\mm}{\ensuremath{\mu^+\mu^-}\xspace}
+\newcommand{\mmg}{\ensuremath{\mu^+\mu^-(\gamma)}\xspace}
+\newcommand{\ellell}{\ensuremath{\ell^+\ell^-}\xspace}
+\newcommand{\pp}{\ensuremath{\pi^+\pi^-}\xspace}
+\newcommand{\pipi}{\ensuremath{\pi^+\pi^-}\xspace}
+\newcommand{\pipiz}{\ensuremath{\pi^-\pi^0}\xspace}
+\newcommand{\ppz}{\ensuremath{\pi^-\pi^0}\xspace}
+\newcommand{\ppg}{\ensuremath{\pi^+\pi^-(\gamma)}\xspace}
+\newcommand{\ppb}{\ensuremath{p\overline{p}}\xspace}
+\newcommand{\ppjpsi}{\ensuremath{\pi^+\pi^- J/\psi}\xspace}
+\newcommand{\Sew}{\ensuremath{S_{\rm EW}}\xspace}
+\newcommand{\Gem}{\ensuremath{G_{\rm EM}}\xspace}
+\newcommand{\tev}{\ensuremath{\mathrm{\,Te\kern -0.1em V}}\xspace}
+\newcommand{\gev}{\ensuremath{\mathrm{\,Ge\kern -0.1em V}}\xspace}
+\newcommand{\mev}{\ensuremath{\mathrm{\,Me\kern -0.1em V}}\xspace}
+\newcommand{\kev}{\ensuremath{\mathrm{\,ke\kern -0.1em V}}\xspace}
+\newcommand{\ev}{\ensuremath{\mathrm{\,e\kern -0.1em V}}\xspace}
+\newcommand{\gevc}{\ensuremath{{\mathrm{\,Ge\kern -0.1em V\!/}c}}\xspace}
+\newcommand{\mevc}{\ensuremath{{\mathrm{\,Me\kern -0.1em V\!/}c}}\xspace}
+\newcommand{\gevcc}{\ensuremath{{\mathrm{\,Ge\kern -0.1em V\!/}c^2}}\xspace}
+\newcommand{\mevcc}{\ensuremath{{\mathrm{\,Me\kern -0.1em V\!/}c^2}}\xspace}
+\newcommand{\eetopp}{\ensuremath{\ee\to\pp}\xspace}
+\newcommand{\eetoppg}{\ensuremath{\ee\to\ppg}\xspace}
+\newcommand{\eetohad}{\ensuremath{\ee\to{\rm hadrons}}\xspace}
+\newcommand{\bei}{\begin{itemize}}
+\newcommand{\eei}{\end{itemize}}
+\newcommand{\ben}{\begin{enumerate}}
+\newcommand{\een}{\end{enumerate}}
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\beqn}{\begin{eqnarray}}
+\newcommand{\eeqn}{\end{eqnarray}}
+\newcommand{\beqns}{\begin{eqnarray*}}
+\newcommand{\eeqns}{\end{eqnarray*}}
+\newcommand\pskip{\\[1.6ex]\noindent}
+\renewcommand{\Re}{\ensuremath{{\rm Re}}\xspace}
+\renewcommand{\Im}{\ensuremath{{\rm Im}}\xspace}
+\newcommand{\nn}{\nonumber}
+\renewcommand{\arraystretch}{1.25}
+\newcommand{\amu}{\ensuremath{a_\mu}\xspace}
+\newcommand{\amuhad}{\ensuremath{\amu^{\rm had}}\xspace}
+\newcommand{\amuhadLO}{\ensuremath{\amu^{\rm had,LO}}\xspace}
+\newcommand{\amuhadLOpp}{\ensuremath{\amu^{\rm had,LO}[\pi\pi]}\xspace}
+\newcommand{\amuhadLOppzz}{\ensuremath{\amu^{\rm had,LO}[\pi\pi2\piz]}\xspace}
+\newcommand{\amuhadHO}{\ensuremath{\amu^{\rm had,HO}}\xspace}
+\newcommand{\amuhadLBL}{\ensuremath{\amu^{\rm had,LBL}}\xspace}
+\newcommand{\amuSM}{\ensuremath{\amu^{\rm SM}}\xspace}
+\newcommand{\amuExp}{\ensuremath{\amu^{\rm exp}}\xspace}
+\newcommand{\ol}{\ensuremath{\overline}}
+%
+%...latinicisms
+\newcommand\ie{{i.e.}\xspace} 
+\newcommand\eg{{e.g.}\xspace} 
+\newcommand\via{via\xspace} 
+\newcommand\viz{{viz.}\xspace}
+\newcommand\cf{{cf.}\xspace}
+\newcommand{\ea}{{\em et al.}\xspace}
+%
+%...others
+\newcommand\rs{\raisebox{1.5ex}[-1.5ex]}
+\newcommand{\taum}{\tau^-}
+\newcommand{\rar}{\rightarrow}
+\newcommand{\ftn}{\footnotesize}
+%
+%...collapse citation numbers to ranges.  
+\def\@citex[#1]#2{\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi
+  \@tempcnta\z@\@tempcntb\m@ne\def\@citea{}\@cite{\@for\@citeb:=#2\do
+    {\@ifundefined
+       {b@\@citeb}{\@citeo\@tempcntb\m@ne\@citea
+        \def\@citea{,\penalty\@m\ }{\bf ?}\@warning
+       {Citation `\@citeb' on page \thepage \space undefined}}%
+    {\setbox\z@\hbox{\global\@tempcntc0\csname b@\@citeb\endcsname\relax}%
+     \ifnum\@tempcntc=\z@ \@citeo\@tempcntb\m@ne
+       \@citea\def\@citea{,\penalty\@m}
+       \hbox{\csname b@\@citeb\endcsname}%
+     \else
+      \advance\@tempcntb\@ne
+      \ifnum\@tempcntb=\@tempcntc
+      \else\advance\@tempcntb\m@ne\@citeo
+      \@tempcnta\@tempcntc\@tempcntb\@tempcntc\fi\fi}}\@citeo}{#1}}
+
+\def\@citeo{\ifnum\@tempcnta>\@tempcntb\else\@citea
+  \def\@citea{,\penalty\@m}%
+  \ifnum\@tempcnta=\@tempcntb\the\@tempcnta\else
+   {\advance\@tempcnta\@ne\ifnum\@tempcnta=\@tempcntb \else
+\def\@citea{--}\fi
+    \advance\@tempcnta\m@ne\the\@tempcnta\@citea\the\@tempcntb}\fi\fi}
+%
+%...new environments
+\newenvironment{myquote}
+               {\list{}{\leftmargin0cm\indent}%
+                \item\relax}
+               {\endlist}
+\newcommand\allFontSize{\footnotesize}
+\newcommand\detailsSize{\allFontSize}
+\newenvironment{details}%
+{\begin{myquote}\detailsSize}{\end{myquote}}
+
+% ------------------------------------------------------------------------

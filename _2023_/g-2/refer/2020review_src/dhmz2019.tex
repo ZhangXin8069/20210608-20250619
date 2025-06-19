@@ -1,0 +1,124 @@
+\documentclass[myepj-spec]{mySvjour}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xspace}
+\usepackage[square,sort&compress,numbers]{natbib}   
+\usepackage{verbatim}
+\usepackage{amsmath,amssymb,amsfonts} % Typical maths resource packages
+\usepackage{tabularx}
+
+\usepackage{lmodern,bm}                
+\usepackage[T1]{sansmath} 
+\SetMathAlphabet{\mathsfbf}{sans}{\sansmathencoding}{\sfdefault}{bx}{sl}
+\usepackage{etoolbox}
+\AtBeginEnvironment{sansmath}{\let\bm\mathsfbf}{}{}
+
+
+%\usepackage{helvet}                   % For sans-serif mode
+%\usepackage{sfmath}
+
+% size of standard figures
+\newcommand{\figsize}{\columnwidth}
+\newcommand{\fighspace}{0.4cm}
+
+%\usepackage[T1]{fontenc}
+%\usepackage{bm}
+
+%\DeclareMathAlphabet{\mathsfit}{\encodingdefault}{\sfdefault}{m}{sl}
+%\SetMathAlphabet{\mathsfit}{bold}{\encodingdefault}{\sfdefault}{bx}{sl}
+
+%\newcommand{\tens}[1]{\bm{\mathsfit{#1}}}
+
+%
+% setup hyper links
+%
+\definecolor{darkblue1}{rgb}{0,0,.2}
+\definecolor{darkblue}{rgb}{0,0,.2}
+\definecolor{darkred}{rgb}{0.5,0,0}
+\pagecolor{white} % Background color
+\color{black}     % Text color
+\hypersetup{breaklinks=true, 
+            colorlinks=true, 
+            linkcolor=darkblue1, 
+            menucolor=darkblue1, 
+            urlcolor=darkblue1,
+            citecolor=darkblue1,
+            pdftitle={},
+            pdfauthor={},
+            pdfsubject={},
+            pdfkeywords={},
+            pdfproducer={}
+}
+%
+% setup page margins and style
+%
+\parskip 0.3cm
+\parskip 0.04cm
+%\topmargin -0.7cm
+\oddsidemargin -0.7cm
+\evensidemargin -0.7cm
+\textheight 23.4cm
+\textwidth 17.4cm
+
+\columnsep 0.6cm
+
+%
+% setup natbib
+%
+\bibstyle{plain}
+%
+
+\input Definitions
+ 
+\begin{document}
+ 
+\twocolumn[{%
+  \begin{@twocolumnfalse}
+
+    \begin{flushright}
+      \normalsize
+      %arXiv:1203.xxxx \\
+      \today
+    \end{flushright}
+
+    \vspace{-2cm}
+
+    \title{\Large\boldmath A new evaluation of the hadronic vacuum polarisation contributions to the muon anomalous magnetic moment  and to \sansmath$\mathbf{\boldsymbol\alpha(m_Z^2)}$}
+
+    \author{M.~Davier\inst{1} \and 
+        A.~Hoecker\inst{2} \and 
+        B.~Malaescu\inst{3} \and 
+        Z.~Zhang\inst{1}}
+ 
+    \institute{IJCLab, Universit\'e Paris-Saclay et CNRS/IN2P3, Orsay, France \and
+          CERN, CH--1211, Geneva 23, Switzerland \and
+          LPNHE, Sorbonne Universit\'e, Paris Diderot Sorbonne Paris Cit\'e, CNRS/IN2P3, Paris, France }
+          
+    \abstract{
+      We reevaluate the hadronic vacuum polarisation contributions to the muon magnetic anomaly and to the running of the electromagnetic coupling constant at the $Z$-boson mass. We include newest $\ee \to {\rm hadrons}$ cross-section data together with a phenomenological fit of the threshold region in the evaluation of the dispersion integrals. The precision in the individual datasets cannot be fully exploited due to discrepancies that lead to additional systematic uncertainty in particular between BABAR and KLOE data in the dominant \pipi channel. For the muon $(g-2)/2$, we find for the lowest-order hadronic contribution  $(694.0 \pm 4.0)\cdot10^{-10}$. The full Standard Model prediction  differs by $3.3\sigma$ from the experimental value. The five-quark hadronic  contribution to \aZ is evaluated to be $(276.0\pm1.0)\cdot10^{-4}$. 
+    }
+
+    \maketitle
+  \end{@twocolumnfalse}
+}]
+
+\input Introduction
+\input Combination
+\input Data
+\input Results
+
+%
+% ------------------------- Acknowledgements ------------------------------
+%
+
+%\begin{details} 
+%We thank XYZ.
+%\end{details}
+
+%
+% ------------------------- Bibliography ------------------------------
+%
+\input Bibliography
+
+\end{document}
